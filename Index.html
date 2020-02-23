@@ -4,9 +4,20 @@
 
 <body>
     <ul>
-        <li>html5</li>
+        <li id="myLi" value="300">html5</li>
         <li>javascript</li>
         <li>css3</li>
         <li>C#</li>
     </ul>
 </body>
+<p id="demo"></p>
+<button onclick="test()">Test</button>
+
+<script>
+    function test() {
+        var x = document.getElementById("myLi").value;
+        document.getElementById("demo").innerHTML = x;
+        alert(x);
+    }
+    
+</script>
